@@ -38,6 +38,7 @@
     display: table;
   }
   .inputBox{
+    position: fixed;
     margin-left: 63px;
     margin-top: 40px;
     box-shadow: 10px;
