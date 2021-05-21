@@ -1,0 +1,50 @@
+
+
+.sideDrawer{
+    width: 250px;
+    color: white;
+    background-color: rgb(108, 108, 168);
+    text-align: center;
+    height: 100% ;
+    position: fixed;
+}
+.mainContent{
+    height: 50px;
+    text-align: right;
+}
+.example-container{
+    height: 100%;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  h1{
+    margin-top: 10px; 
+    font-size: 30px; 
+    margin-bottom: 50px;
+  }
+  .header{
+    width: 1272px;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+  }
+  .main.contents {
+    min-height: 100vh;
+    margin-top: 60px; /* height of header */
+    padding: 16px;
+  }
+  .homeIcon{
+    margin-bottom: 25px; 
+    cursor: pointer;
+  }
+  .dashboardIcon{
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  .imgDiv{
+    width: 210px;
+    height: 60px;
+  }
+  

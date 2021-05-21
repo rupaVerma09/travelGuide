@@ -1,0 +1,35 @@
+<div class="inputBox">
+  <form class="example" action="/action_page.php">
+    <ng-select [items]="countries" bindLabel="name" placeholder="Search Country" [(ngModel)]="selectedCountry"
+      [ngModelOptions]="{standalone: true}" style="width: 1013px;">
+    </ng-select>
+    <button type="submit" class="SearchBtn" style="width: 50px;"
+    (click)="searchCountry()"><i class="fa fa-search fa-l"></i></button>
+  </form>
+
+  <div *ngIf="countryDetails.confirmed" class="row" >
+    <h1> Covid-19 Statistics : 
+      <span *ngIf="isSafe" class="safeSpan"> Safe To Travel!</span>
+      <span *ngIf="!isSafe" class="notSafe"> Not Safe For Travel!</span>
+    </h1>
+  </div>
+<div *ngIf="countryDetails.confirmed" class="row" >
+  <div class="column red" >
+    <h2>Confirmed</h2>
+    <p>{{countryDetails.confirmed ? countryDetails.confirmed : '--'}}</p>
+  </div>
+  <div class="column orange" >
+    <h2>Active</h2>
+    <p>{{countryDetails.confirmed ? countryDetails.confirmed : '--'}}</p>
+  </div>
+  <div class="column green" >
+    <h2>Recovered</h2>
+    <p>{{countryDetails.confirmed ? countryDetails.confirmed : '--'}}</p>
+  </div>
+  <div class="column black" >
+    <h2>Deaths</h2>
+    <p>{{countryDetails.confirmed ? countryDetails.confirmed : '--'}}</p>
+  </div>
+
+</div>
+</div>

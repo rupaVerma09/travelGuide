@@ -1,0 +1,43 @@
+<mat-drawer-container class="example-container">
+
+  <mat-drawer mode="side" opened class="sideDrawer">
+    <img src="../../assets/cmyIcon.png" alt="image" class="imgDiv">
+    <div class="row homeIcon" [routerLink]="['/home']" routerLinkActive="router-link-active">
+      <div class="col-6">
+        <mat-icon >home</mat-icon>
+      </div>
+      <div class="col-6">
+        <p>home</p>
+      </div>
+    </div>
+    <div class="row dashboardIcon" [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
+      <div class="col-6">
+        <mat-icon >dashboard</mat-icon>
+      </div>
+      <div class="col-6">
+        <p>Dashboard</p>
+      </div>
+    </div>
+
+  </mat-drawer>
+
+  <mat-toolbar class="header">
+    <button mat-icon-button class="example-icon">
+      <mat-icon>menu</mat-icon>
+    </button> &nbsp;
+    <span style="color: rgb(108, 108, 168);">Convid-10 Information</span>
+    <span class="example-spacer"></span>
+    <button class="example-icon">
+      <i class="fa fa-bell fa-2x"></i>
+    </button> &nbsp;
+    <button class="example-icon" style="width: 41px;">
+      <i class="fa fa-user fa-2x"></i>
+    </button>
+  </mat-toolbar>
+
+  <div class="main contents">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
+</mat-drawer-container>

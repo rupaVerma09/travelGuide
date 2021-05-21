@@ -1,0 +1,101 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+* 
+
+{
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background:  rgb(58, 58, 88);;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+   
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .inputBox{
+    margin-left: 63px;
+    margin-top: 40px;
+    box-shadow: 10px;
+  }
+  .SearchBtn{
+    float: right;
+    margin-left: 1012px;
+    margin-bottom: 31px;
+    margin-top: -36px;
+    width: 100px;
+    height: 35px;
+  }
+
+  .column {
+    float: left;
+    width: 20%;
+    margin-right: 3%;
+    padding: 10px;
+    height: 165px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 16px 4px rgb(0 0 0 / 15%);
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  p{
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bolder;
+  }
+  .red{
+    background-color: rgb(255 28 4 / 26%);
+    color: rgb(230 24 24);
+  }
+  .green{
+    background-color: rgb(20 173 71 / 38%);
+    color: rgb(20 173 71 );
+  }
+  .orange{
+    background-color: #ffa5004d;
+    color: orange;
+  }
+  .black{
+    background-color:rgba(73, 71, 71, 0.363);
+    color:rgb(73, 71, 71);
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .safeSpan{
+    color: rgb(52, 224, 52);
+  }
+  .notSafe{
+    color: red;
+  }

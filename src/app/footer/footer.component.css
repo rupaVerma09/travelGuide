@@ -1,0 +1,16 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(158, 152, 152);
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+.para{
+    margin-top: 10px;
+    margin-left: 190px;
+    font-size: 16px;
+    color: rgb(214, 212, 202);
+}
